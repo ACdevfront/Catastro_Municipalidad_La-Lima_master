@@ -1,0 +1,100 @@
+.informacion {
+        max-width: 98%; /* Limita el ancho del section al 80% del ancho de la pantalla */
+        margin: 0 auto; /* Centra el section horizontalmente */
+        padding: 1rem; /* Añade padding interno */
+        box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */  
+}
+
+
+.titulo-principal {
+    color: var(--fuente-ceniza-oscuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-left: 0.35rem;
+}
+
+h3 {
+    color:green;
+    font-weight: bold;
+    border-bottom: 2px solid #00ff00;
+    padding-top: 2rem;
+    padding-bottom: 5px;
+}
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.data-table th, .data-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+.data-table th {
+    background-color:#6b8e23;
+    color: #fff;
+}
+.section-content p, .section-content ul {
+    margin: 10px 0;
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 768px) {
+    .data-table th, .data-table td {
+        padding: 6px;
+        font-size: 0.9em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    .section-content ul {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .informacion {
+        max-width: 100%; /* Limita el ancho del section al 80% del ancho de la pantalla */
+        margin: 0 auto; /* Centra el section horizontalmente */
+        padding: 1rem; /* Añade padding interno */
+        box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */  
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+    .data-table th, .data-table td {
+        font-size: 0.8em;
+    }
+    .data-table, .data-table th, .data-table td {
+        display: block;
+        width: 100%;
+    }
+    .data-table th {
+        background-color: #6b8e23;
+        color: #fff;
+    }
+    .data-table tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .data-table td {
+        border: none;
+        padding-left: 50%;
+        position: relative;
+        font-weight: bold;
+    }
+    .data-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: normal;
+        color: #555;
+    }
+}
