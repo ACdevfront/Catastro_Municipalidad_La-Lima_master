@@ -8,7 +8,7 @@
     
     background-color: var(--background-llamada-mobile);
 
-    padding-top: 16.25rem;
+    padding-top: 17.5rem;
     padding-bottom: 1.5rem;
 }
 
@@ -41,7 +41,7 @@
     .llamada {
         background-image: url(../img/bg-intro.png);
         background-size: cover;
-        padding-top: 8.25rem;
+        padding-top: 9.5rem;
     }
     .llamada__titulo {
         color: #e8f804;
