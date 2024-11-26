@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       TipoDeTrabajo: "Inspección de Campo",
       Responsables: "Alejandro Castillo",
       ResolucionDelTrabajo: "N/A",
-      Observaciones: "Apoyo: la porquería"
+      Observaciones: "Apoyo: (...)"
     },
     {
       Cod: "AGO23-02",
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       TipoDeTrabajo: "Remedición de Terreno",
       Responsables: "Alejandro Castillo",
       ResolucionDelTrabajo: "Se verificó que el solar de atrás se le metió",
-      Observaciones: "Apoyó Amado Brandon y porquería"
+      Observaciones: "Apoyó Amado Brandon y (...)"
     },
     {
       Cod: "SEP23-01",
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       TipoDeTrabajo: "Inspección de Campo",
       Responsables: "Alejandro Castillo",
       ResolucionDelTrabajo: "N/A",
-      Observaciones: "Apoyo: la porquería"
+      Observaciones: "Apoyo: (...)"
     },
     {
       Cod: "SEP23-02",
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       TipoDeTrabajo: "Elaboración de Croquis",
       Responsables: "Alejandro Castillo",
       ResolucionDelTrabajo: "N/A",
-      Observaciones: "Apoyo: la porquería"
+      Observaciones: "Apoyo: (...)"
     },
     {
       Cod: "SEP23-03",
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
       TipoDeTrabajo: "Elaboración de Croquis",
       Responsables: "Alejandro Castillo",
       ResolucionDelTrabajo: "N/A",
-      Observaciones: "Apoyó Amadito y porquería"
+      Observaciones: "Apoyó Amadito y (...)"
     },
     {
       Cod: "OCT23-01",
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
       tipoTrabajo: "Inspección de Campo",
       responsables: "Alejandro Castillo",
       resolucionTrabajo: "En el frente tiene menos 20 cm, atrás el ancho del muro está a favor del vecino de atrás",
-      observaciones: "Apoyó: Said, Brandon, porquería y Cristian"
+      observaciones: "Apoyó: Said, Brandon, (...) y Cristian"
     },
     {
       codigo: "JUL24-02",
