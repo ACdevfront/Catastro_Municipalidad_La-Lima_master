@@ -39,7 +39,7 @@
 
 @media screen and (min-width: 1024px){
     .llamada {
-        background-image: url(../img/bg-intro.png);
+        /*background-image: url(../img/bg-intro.png);*/
         background-size: cover;
         padding-top: 9.5rem;
     }

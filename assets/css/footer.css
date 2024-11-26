@@ -39,6 +39,7 @@
 .creador{
     color: white;
 	font-size: 18px;
+    font-family: var(--montserrat);
     text-align: center;
 }
 

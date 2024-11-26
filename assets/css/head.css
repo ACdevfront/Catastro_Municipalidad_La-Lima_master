@@ -46,7 +46,9 @@
 
 .head__enlace:hover > a {
     color: #f8e004;
-    font-size: 1.12rem;
+    text-decoration: underline;
+    /*font-size: 1.1rem;*/
+    /*font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
 }
 
 /* Estilo para el submenú */
