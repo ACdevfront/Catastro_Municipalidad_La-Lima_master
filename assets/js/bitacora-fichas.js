@@ -5,76 +5,386 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalRegistros = document.getElementById("total-registros");
 
     const registros = [
-      { no: 1, noCatastral: "GP423U-14-0015", ubicacion: "Filadelfia", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "Alejandro", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-      { no: 2, noCatastral: "GP423U-04-0001", ubicacion: "Filadelfia", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "Alejandro", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-      { no: 3, noCatastral: "GP423U-14-0016", ubicacion: "Filadelfia", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "Alejandro", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-      { no: 4, noCatastral: "GP423U-14-0014", ubicacion: "Filadelfia", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "Alejandro", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-      { no: 5, noCatastral: "GP423U-14-0007", ubicacion: "Filadelfia", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "Alejandro", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-      { no: 6, noCatastral: "GP423U-14-0004", ubicacion: "Filadelfia", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "Alejandro", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-      { no: 7, noCatastral: "GP423U-14-0003", ubicacion: "Filadelfia", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-      { no: 8, noCatastral: "GP423U-14-0003", ubicacion: "Filadelfia", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-      { no: 9, noCatastral: "GP432O-03-0049", ubicacion: "Guaruma I ", nombreContribuyente:" N/A ", noIdentidad:" N/A ", responsable:" N/A ", fechaSalida:" N/A ", tipoSalida:" N/A ", estacion:" N/A ", observaciones:" N/A" },
-      {no :11,noCatastral : 'GP423F-12-0087',ubicacion:'Martinez Rivera',nombreContribuyente:'N / A',noIdentidad:' N / A ',responsable:' N / A ',fechaSalida:' N / A ',tipoSalida:' N / A ',estacion:' N / A ',observaciones:' N / A '},
-      {no :12,noCatastral : 'GP432N-08-0002',ubicacion:'Nueva Guadalupe ',nombreContribuyente:' N / A ',noIdentidad:' N / A ',responsable:' N / A ',fechaSalida:' N / A ',tipoSalida:' N / A ',estacion:' N / A ',observaciones:' N / A '},
-      {no :13,noCatastral : 'GP442W-75-0005',ubicacion:'Res. Villa San Fernando',nombreContribuyente:' N / A ',noIdentidad:' N / A ',responsable:' N / A ',fechaSalida:' N / A ',tipoSalida:' N / A ',estacion:' N / A ',observaciones:' N / A '},
-      {no :14,noCatastral : 'GP442X-79-0007',ubicacion:'Res. Villa Nova',nombreContribuyente:' N / A ',noIdentidad:' N / A ',responsable:' N / A ',fechaSalida:' N / A ',tipoSalida:' N / A ',estacion:' N / A ',observaciones:' N / A '},
-      {no :15,noCatastral : 'GP423L-27-0004',ubicacion:'Los Pinos ',nombreContribuyente:' N / A ',noIdentidad:' N / A ',responsable:' N / A ',fechaSalida:' N / A ',tipoSalida:' N / A ',estacion:' N / A ',observaciones:' N / A '},
-      {no :16,noCatastral : 'GP423G-09-0019',ubicacion:'Chulavista',nombreContribuyente:' N /A',noIdentidad :' NA',responsable :' NA',fechaSalida :' NA',tipoSalida :' NA',estacion :' NA',observaciones :' NA'},
-      {no :17,noCatastral : 'GP423G-09-0003',ubicacion :'Chulavista',nombreContribuyente :' NA',noIdentidad :' NA',responsable :' NA',fechaSalida :' NA',tipoSalida :' NA',estacion :' NA',observaciones :' NA'},
-      {no :18,noCatastral : 'GP423G-09-0017',ubicacion :'Chulavista',nombreContribuyente :' NA',noIdentidad :' NA',responsable :' NA',fechaSalida :' NA',tipoSalida :' NA',estacion :' NA',observaciones :' NA'},
-      {no :19,noCatastral : 'GP423G-09-0015',ubicacion :'Chulavista',nombreContribuyente :' NA',noIdentidad :' NA',responsable :' NA',fechaSalida :' NA',tipoSalida :' NA',estacion :' NA',observaciones :' NA'},
-      {no :20,noCatastral : 'GP423G-09-0014',ubicacion :'Chulavista',nombreContribuyente :' NA',noIdentidad :' NA',responsable :' NA',fechaSalida :' NA',tipoSalida :' NA',estacion :' NA',observaciones :' NA'},
-      {no :21,noCatastral : 'GP423G-09-0016',ubicacion :'Chulavista' ,nombreContribuyente :"NA" ,noIdentidad :"NA" ,responsable :"NA" ,fechaSalida :"NA" ,tipoSalida :"NA" ,estacion :"NA" ,observaciones :"NA"},
-      {no :22,noCatastral :" GP423H-08-0004 ",ubicacion :" El Caiman ",nombreContribuyente :"NA" ,noIdentidad :"NA" ,responsable :"NA" ,fechaSalida :"NA" ,tipoSalida :"NA" ,estacion :"NA" ,observaciones :"NA"},
-      {no :23,noCatastral :" GP423H-08-0010 ",ubicacion :" El Caiman ",nombreContribuyente :"NA" ,noIdentidad :"NA" ,responsable :"NA" ,fechaSalida :"NA" ,tipoSalida :"NA" ,estacion :"NA" ,observaciones :"NA"},
-      {no :24,noCatastral :" GP423H-13-0017 ",ubicacion :" El Caiman ",nombreContribuyente :"NA" ,noIdentidad :"NA" ,responsable :"NA" ,fechaSalida :"NA" ,tipoSalida :"NA" ,estacion :"NA" ,observaciones :"NA"},
-      {no :25,noCatastral :" GP423H-13-0012 ",ubicacion :" El Caiman ",nombreContribuyente :"NA" ,noIdentidad :"NA" ,responsable :"NA" ,fechaSalida :"NA" ,tipoSalida :"NA" ,estacion :"NA" ,observaciones :"NA"},
-      {no :26,noCatastral :" GP423G-03-0009 ",ubicacion :" Sula ",nombreContribuyente :"NA" ,noIdentidad :"NA" ,responsable :"NA" ,fechaSalida :"NA" ,tipoSalida :"NA" ,estacion :"NA" ,observaciones :"NA"},
-      {no :27,noCatastral:" GP423L-27-0008 ",ubicacion:" Los Pinos ",nombreContribuyente:" NA ",noIdentidad:" N/A ",responsable:" N/A ",fechaSalida:" N/A ",tipoSalida:" N/A ",estacion:" N/A ",observaciones:" N/A"},
-      { no: 28, noCatastral:"GP423L-21-0010", ubicacion:"Los Pinos ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-      { no: 29, noCatastral:"GP423G-09-0010", ubicacion:"Chulavista ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-      { no: 30, noCatastral:"GP423G-09-0006", ubicacion:"Chulavista ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-      { no: 31, noCatastral:"GP423G-09-0005", ubicacion:"Chulavista ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-      { no: 32, noCatastral:"GP422A-14-0001", ubicacion:"Res. Villa Esther ", nombreContribuyente:" N /A ", noIdentidad:" N /A ", responsable:" N /A ", fechaSalida:" N /A ", tipoSalida:" N /A ", estacion:" N /A ", observaciones:" N /A"},
-      { no: 33, noCatastral:"GP422A-14-0009", ubicacion:"Res. Villa Esther ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-      { no: 34, noCatastral:"GP422A-14-0020", ubicacion:"Res. Villa Esther ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-      { no: 35, noCatastral:"GP442W-75-0010", ubicacion:"Res. Villa San Fernando ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-      { no: 36, noCatastral:"GP423H-03-0007", ubicacion:"El Cementerio ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-      { no: 37, noCatastral:"GP423H-03-0006", ubicacion:"El Cementerio ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-      { no: 38, noCatastral:"GP423H-03-0013", ubicacion:"El Cementerio ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-      { no: 39, noCatastral:"GP423H-03-0011", ubicacion:"El Cementerio ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-      { no: 40, noCatastral:"GP423H-03-0008", ubicacion:"El Cementerio ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-    { no: 41, noCatastral:"GP432N-08-0005", ubicacion:"Nueva Guadalupe ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-    { no: 42, noCatastral:"GP432N-08-0006", ubicacion:"Nueva Guadalupe ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-    { no: 43, noCatastral:"GP432N-09-0003", ubicacion:"Nueva Guadalupe ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-    { no: 44, noCatastral:"GP432N-09-0005", ubicacion:"Nueva Guadalupe ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-    { no: 45, noCatastral:"GP432N-10-0006", ubicacion:"Nueva Guadalupe ", nombreContribuyente:"N/A ", noIdentidad:"N/A ", responsable:"N/A ", fechaSalida:"N/A ", tipoSalida:"N/A ", estacion:"N/A ", observaciones:"N/A"},
-    { no: 46, noCatastral: "GP423U-14-0017", ubicacion: "Filadelfia", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 47, noCatastral: "GP423U-04-0004", ubicacion: "Filadelfia", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 48, noCatastral: "GP423H-09-0027", ubicacion: "Centro Sur", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 49, noCatastral: "GP423H-04-0012", ubicacion: "Centro Sur", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 50, noCatastral: "GP423C-36-0011", ubicacion: "Centro Sur", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 51, noCatastral: "GP423C-36-0006", ubicacion: "Centro Sur", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 52, noCatastral: "GP423C-36-0005", ubicacion: "Centro Sur", nombreContribuyente: "N/A", noIdentidad:" N/A ", responsable:" N/A ", fechaSalida:" N/A ", tipoSalida:" N/A ", estacion:" N/A ", observaciones:" N/A"},
-    { no :53, noCatastral : 'GP423B-29-0001',ubicacion : 'Centro Sur',nombreContribuyente : ' N / A ',noIdentidad : ' N / A ',responsable : ' N / A ',fechaSalida : ' N / A ',tipoSalida : ' N / A ',estacion : ' N / A ',observaciones : ' N / A '},
-    { no :54, noCatastral :" GP423B-30-0010",ubicacion :" Centro Sur ",nombreContribuyente :"NA" ,noIdentidad :"NA" ,responsable :"NA" ,fechaSalida :"NA" ,tipoSalida :"NA" ,estacion :"NA" ,observaciones :"NA"},
-    {no :55,noCatastral:' GP423H-09-0014',ubicacion:' Centro Sur ',nombreContribuyente:' NA ',noIdentidad:' NA ',responsable:' NA ',fechaSalida:' NA ',tipoSalida:' NA ',estacion:' NA ',observaciones:' NA '},
-    {no :56,noCatastral:' GP423H-04-0008',ubicacion:' Centro Sur ',nombreContribuyente:' NA ',noIdentidad:' NA ',responsable:' NA ',fechaSalida:' NA ',tipoSalida:' NA ',estacion:' NA ',observaciones:' NA '},
-    {no :57,noCatastral:' GP423H-04-0009',ubicacion:' Centro Sur ',nombreContribuyente:' NA ',noIdentidad:' NA ',responsable:' NA ',fechaSalida:' NA ',tipoSalida:' NA ',estacion:' NA ',observaciones:' NA '},
-    {no :58,noCatastral:' GP423H-04-0011',ubicacion:' Centro Sur ',nombreContribuyente:' NA ',noIdentidad:' NA ',responsable:' NA ',fechaSalida:' NA ',tipoSalida:' NA ',estacion:' NA ',observaciones:' NA '},
-    {no :59,noCatastral:' GP423H-04-0005',ubicacion:' Centro Sur ',nombreContribuyente:' NA ',noIdentidad:' NA ',responsable:' NA ',fechaSalida:' NA ',tipoSalida:' NA ',estacion:' NA ',observaciones:' NA '},
-    {no :60,noCatastral:' GP423H-04-0004',ubicacion :' Centro Sur',nombreContribuyente :' N / A',noIdentidad :' N / A',responsable :' N / A',fechaSalida :' N / A',tipoSalida :' N / A',estacion :' N / A',observaciones :' N / A'},
-    {no :61,noCatastral :' GP423H-01-0011',ubicacion :' Centro Sur',nombreContribuyente :' n/a',noIdentidad :' n/a',responsable :' n/a',fechaSalida :' n/a',tipoSalida :' n/a',estacion :' n/a',observaciones :' n/a'},
-    {no :62,noCatastral :' GP423H-04-0001',ubicacion :' Centro Sur',nombreContribuyente :' n/a',noIdentidad :' n/a',responsable :' n/a',fechaSalida :' n/a',tipoSalida :' n/a',estacion :' n/a',observaciones :' n/a'},
-    {no :63,noCatastral :' GP423H-04-0002',ubicacion :' Centro Sur',nombreContribuyente :' n/a',noIdentidad :' n/a',responsable :' n/a',fechaSalida :' n/a',tipoSalida :' n/a',estacion :' n/a',observaciones :' n/a'},
-    { no: 64, noCatastral: "GP423H-01-0010", ubicacion: "Centro Sur", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 65, noCatastral: "GP423H-01-0006", ubicacion: "Centro Sur", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 66, noCatastral: "GP423H-01-0002", ubicacion: "Centro Sur", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 67, noCatastral: "GP423C-36-0004", ubicacion: "Centro Sur", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 68, noCatastral: "GP423C-36-0003", ubicacion: "Centro Sur", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 69, noCatastral: "GP423C-36-0001", ubicacion: "Centro Sur", nombreContribuyente: "N/A", noIdentidad: "N/A", responsable: "N/A", fechaSalida: "N/A", tipoSalida: "N/A", estacion: "N/A", observaciones: "N/A" },
-    { no: 70, noCatastral:"GP423C-36-0002" ,ubicacion:"Centro Sur" ,nombreContribuyente:" N / A ",noIdentidad:" N / A ",responsable:" N / A ",fechaSalida:" N / A ",tipoSalida:" N / A ",estacion:" N / A ",observaciones:" N / A"},
-    { no :71,noCatastral :" GP423C-09-0005 ",ubicación :" Centro Sur ",nombreContribuyente :"NA ",noIdentidad :"NA ",responsable :"N/A ", fechasalida: "NA", tiposalida: "NA",estación : "NA " ,observaciones :"NA"},
+        { no: 1, noCatastral: "GP431B-23-0041", ubicacion: "Guaymuras", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 2, noCatastral: "GP431B-07-0034", ubicacion: "Guaymuras", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 3, noCatastral: "GP431B-05-0025", ubicacion: "Guaymuras", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 4, noCatastral: "GP431B-13-0039", ubicacion: "Guaymuras", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 5, noCatastral: "GP431C-11-0028", ubicacion: "Guaymuras", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 6, noCatastral: "GP431C-02-0011", ubicacion: "Guaymuras", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 7, noCatastral: "GP431C-25-0025", ubicacion: "Guaymuras", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 8, noCatastral: "GP431G-18-0087", ubicacion: "Guaymuras", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 9, noCatastral: "GP442W-17-0021", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Damaris Loami Coto", tipoSalida: "Fraccionamiento", estacion: "Ofic.Técnico Dibujante" },
+        { no: 10, noCatastral: "GP442W-17-0022", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Damaris Loami Coto", tipoSalida: "Fraccionamiento", estacion: "Ofic.Técnico Dibujante" },
+        { no: 11, noCatastral: "GP442W-17-0023", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Damaris Loami Coto", tipoSalida: "Fraccionamiento", estacion: "Ofic.Técnico Dibujante" },
+        { no: 12, noCatastral: "GP423K-12-0099", ubicacion: "Martinez Rivera", propietario: "N/A", identidad: "0000", responsable: "Damaris Loami Coto", tipoSalida: "Elab. de Croquis y Constancia", estacion: "Ofic.Técnico Dibujante" },
+        { no: 13, noCatastral: "GP431C-41-0010", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 14, noCatastral: "GP431C-29-0008", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 15, noCatastral: "GP431C-30-0004", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 16, noCatastral: "GP431D-52-0014", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 17, noCatastral: "GP442W-35-0007", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 18, noCatastral: "GP442W-10-0003", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 19, noCatastral: "GP442W-04-0009", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 20, noCatastral: "GP442W-09-0008", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 21, noCatastral: "GP442W-30-0026", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Damaris Loami Coto", tipoSalida: "Fraccionamiento", estacion: "Ofic.Técnico Dibujante" },
+        { no: 22, noCatastral: "GP431C-36-0024", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Damaris Loami Coto", tipoSalida: "Fraccionamiento", estacion: "Ofic.Técnico Dibujante" },
+        { no: 23, noCatastral: "GP431C-29-0006", ubicacion: "Res. Buenos Aires", propietario: "N/A", identidad: "0000", responsable: "Damaris Loami Coto", tipoSalida: "Fraccionamiento", estacion: "Ofic.Técnico Dibujante" },
+        { no: 24, noCatastral: "GP423F-21-0008", ubicacion: "23 De Septiembre", propietario: "N/A", identidad: "0000", responsable: "Damaris Loami Coto", tipoSalida: "Fraccionamiento", estacion: "Ofic.Técnico Dibujante" },
+        { no: 25, noCatastral: "GP423F-21-0009", ubicacion: "23 De Septiembre", propietario: "N/A", identidad: "0000", responsable: "Damaris Loami Coto", tipoSalida: "Fraccionamiento", estacion: "Ofic.Técnico Dibujante" },
+        { no: 26, noCatastral: "GP423F-29-0001", ubicacion: "23 De Septiembre", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 27, noCatastral: "GP423F-01-0004", ubicacion: "23 De Septiembre", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 28, noCatastral: "GP423F-15-0002", ubicacion: "23 De Septiembre", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 29, noCatastral: "GP423A-12-0041", ubicacion: "23 De Septiembre", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 30, noCatastral: "GP423A-12-0042", ubicacion: "23 De Septiembre", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 31, noCatastral: "GP423A-08-0003", ubicacion: "23 De Septiembre", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 32, noCatastral: "GP424W-27-0028", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 33, noCatastral: "GP424W-02-0003", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 34, noCatastral: "GP424W-24-0010", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 35, noCatastral: "GP424V-46-0008", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 36, noCatastral: "GP424V-06-0003", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 37, noCatastral: "GP424V-06-0008", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 38, noCatastral: "GP424V-07-0003", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 39, noCatastral: "GP424V-07-0006", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 40, noCatastral: "GP424V-07-0008", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 41, noCatastral: "GP424V-07-0010", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 42, noCatastral: "GP424V-10-0001", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 43, noCatastral: "GP424R-52-0006", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 44, noCatastral: "GP424R-04-0002", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 45, noCatastral: "GP424R-04-0006", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 46, noCatastral: "GP424R-19-0002", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 47, noCatastral: "GP424R-21-0001", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 48, noCatastral: "GP424R-21-0002", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 49, noCatastral: "GP424R-35-0006", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        { no: 50, noCatastral: "GP424R-22-0001", ubicacion: "Sitraterco", propietario: "N/A", identidad: "0000", responsable: "Oscar Baday Badai", tipoSalida: "Mal Archivada/Extraviada", estacion: "N/A" },
+        {
+            no: 51,
+            noCatastral: "GP424Q-52-0002",
+            ubicacion: "Sitraterco",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 52,
+            noCatastral: "GP424Q-38-0009",
+            ubicacion: "Sitraterco",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 53,
+            noCatastral: "GP424Q-20-0001",
+            ubicacion: "Sitraterco",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 54,
+            noCatastral: "GP424Q-25-0002",
+            ubicacion: "Sitraterco",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 55,
+            noCatastral: "GP424Q-25-0004",
+            ubicacion: "Sitraterco",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 56,
+            noCatastral: "GP424Q-31-0011",
+            ubicacion: "Sitraterco",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Damaris Loami Coto",
+            tipoSalida: "Fraccionamiento",
+            estacion: "Ofic.Técnico Dibujante"
+        },
+        {
+            no: 57,
+            noCatastral: "GP424Q-32-0011",
+            ubicacion: "Sitraterco",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Damaris Loami Coto",
+            tipoSalida: "Fraccionamiento",
+            estacion: "Ofic.Técnico Dibujante"
+        },
+        {
+            no: 58,
+            noCatastral: "GP423C-09-0028",
+            ubicacion: "Res. Riberalta",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 59,
+            noCatastral: "GP423L-26-0008",
+            ubicacion: "Los Pinos",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 60,
+            noCatastral: "GP423L-29-0012",
+            ubicacion: "Los Pinos",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Damaris Loami Coto",
+            tipoSalida: "Fraccionamiento",
+            estacion: "Ofic.Técnico Dibujante"
+        },
+        {
+            no: 61,
+            noCatastral: "GP442W-75-0005",
+            ubicacion: "Res. Villa San Fernando",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Alejandro Castillo",
+            tipoSalida: "Reavaluo",
+            estacion: "Gabinete de Técnico Valuador"
+        },
+        {
+            no: 62,
+            noCatastral: "GP442W-75-0010",
+            ubicacion: "Res. Villa San Fernando",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Alejandro Castillo",
+            tipoSalida: "Reavaluo",
+            estacion: "Gabinete de Técnico Valuador"
+        },
+        {
+            no: 63,
+            noCatastral: "GP442X-79-0007",
+            ubicacion: "Res. Villa Nova",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Alejandro Castillo",
+            tipoSalida: "Reavaluo",
+            estacion: "Gabinete de Técnico Valuador"
+        },
+        {
+            no: 64,
+            noCatastral: "GP423U-02-0044",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 65,
+            noCatastral: "GP423U-07-0014",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 66,
+            noCatastral: "GP423U-08-0008",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 67,
+            noCatastral: "GP423U-08-0011",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 68,
+            noCatastral: "GP423U-08-0012",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 69,
+            noCatastral: "GP423U-08-0016",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 70,
+            noCatastral: "GP423U-09-0001",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 71,
+            noCatastral: "GP423U-09-0004",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 72,
+            noCatastral: "GP423U-09-0005",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 73,
+            noCatastral: "GP423U-09-0013",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 74,
+            noCatastral: "GP423U-09-0014",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 75,
+            noCatastral: "GP423U-10-0002",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 76,
+            noCatastral: "GP423U-10-0004",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 77,
+            noCatastral: "GP423U-10-0007",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 78,
+            noCatastral: "GP423U-11-0001",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 79,
+            noCatastral: "GP423U-13-0002",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 80,
+            noCatastral: "GP423U-25-0007",
+            ubicacion: "Filadelfia",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Oscar Baday Badai",
+            tipoSalida: "Mal Archivada/Extraviada",
+            estacion: "N/A"
+        },
+        {
+            no: 81,
+            noCatastral: "GP423C-36-0002",
+            ubicacion: "Centro Sur",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Alejandro Castillo",
+            tipoSalida: "Incremento de B. I.",
+            estacion: "Ventanilla"
+        },
+        {
+            no: 82,
+            noCatastral: "GP423C-09-0005",
+            ubicacion: "Centro Sur",
+            propietario: "N/A",
+            identidad: "0000",
+            responsable: "Alejandro Castillo",
+            tipoSalida: "Incremento de B. I.",
+            estacion: "Gabinete de Técnico Valuador"
+        },
+        {
+            no: 83,
+            noCatastral: "GP431C-50-0004",
+            ubicacion: "Res. Buenos Aires",
+            propietario: "Elizabeth Navas",
+            identidad: "0000",
+            responsable: "Karina Beatriz Dubon",
+            tipoSalida: "Cambio de Propietario",
+            estacion: "Oficina de Secretaria"
+        }
         // Agrega más registros aquí
     ];
 
@@ -119,7 +429,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Código para el botón flotante
     const scrollToTopBtn = document.createElement("button");
     scrollToTopBtn.id = "scroll-to-top";
-scrollToTopBtn.textContent = " ↑ ";
+    scrollToTopBtn.textContent = " ↑ ";
 
     // Agregar el botón al final de la sección
     const mainSection = document.getElementById("bitacora");
@@ -142,11 +452,11 @@ scrollToTopBtn.textContent = " ↑ ";
     scrollToTopBtn.style.cursor = "pointer";
     scrollToTopBtn.style.display = "none"; // Inicialmente oculto
 
-    scrollToTopBtn.addEventListener("click", function() {
+    scrollToTopBtn.addEventListener("click", function () {
         mainSection.scrollIntoView({ behavior: "smooth" });
     });
 
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
         const sectionRect = mainSection.getBoundingClientRect();
         const footer = document.querySelector("footer"); // Cambiar esto si el footer tiene un ID diferente
         const footerRect = footer.getBoundingClientRect();
