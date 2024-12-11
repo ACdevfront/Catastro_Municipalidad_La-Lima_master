@@ -107,22 +107,22 @@ tbody tr td:nth-child(6) {
 
 tbody tr td:nth-child(7) {
     /*color:green;*/
-    background-color:khaki; 
+    background-color:khaki;
+    font-weight: bold; 
 }
 
 tbody tr td:nth-child(8) {
     background-color:khaki; 
-    font-weight: bold;
 }
 
-tbody tr td:nth-child(9) {
+/*tbody tr td:nth-child(9) {
     background-color:khaki; 
 }
 
 tbody tr td:nth-child(10) {
     background-color:khaki; 
 }
-
+*/
 /* Código botón ARRIBA */
 
 /*#scroll-to-top {
