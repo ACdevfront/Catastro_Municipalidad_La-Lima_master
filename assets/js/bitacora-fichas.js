@@ -86,6 +86,24 @@ document.addEventListener("DOMContentLoaded", function () {
         { No: 79, No_Catastral: "GP424V-01-0014", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
         { No: 80, No_Catastral: "GP424V-06-0003", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
         { No: 81, No_Catastral: "GP424V-06-0008", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 82, No_Catastral: "GP424V-07-0003", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 83, No_Catastral: "GP424V-07-0006", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 84, No_Catastral: "GP424V-07-0008", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 85, No_Catastral: "GP424V-07-0010", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 86, No_Catastral: "GP424V-10-0001", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 87, No_Catastral: "GP424V-46-0008", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 88, No_Catastral: "GP424W-02-0003", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 89, No_Catastral: "GP424W-24-0010", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 90, No_Catastral: "GP424W-27-0028", Ubicacion: "Sitraterco", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 91, No_Catastral: "GP424Y-36-0001", Ubicacion: "Chiquita", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 92, No_Catastral: "GP431B-05-0025", Ubicacion: "Guaymuras", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 93, No_Catastral: "GP431B-07-0034", Ubicacion: "Guaymuras", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 94, No_Catastral: "GP431B-13-0039", Ubicacion: "Guaymuras", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 95, No_Catastral: "GP431B-23-0041", Ubicacion: "Guaymuras", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 96, No_Catastral: "GP431C-02-0011", Ubicacion: "Guaymuras", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 97, No_Catastral: "GP431C-11-0028", Ubicacion: "Guaymuras", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 98, No_Catastral: "GP431C-25-0025", Ubicacion: "Guaymuras", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
+        { No: 99, No_Catastral: "GP431C-29-0008", Ubicacion: "Res. Buenos Aires", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
         { No: 100, No_Catastral: "GP431C-30-0004", Ubicacion: "Res. Buenos Aires", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
         { No: 101, No_Catastral: "GP431C-41-0010", Ubicacion: "Res. Buenos Aires", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
         { No: 102, No_Catastral: "GP431D-52-0014", Ubicacion: "Res. Buenos Aires", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
@@ -93,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
         { No: 104, No_Catastral: "GP442W-04-0009", Ubicacion: "Res. Buenos Aires", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
         { No: 105, No_Catastral: "GP442W-09-0008", Ubicacion: "Res. Buenos Aires", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" },
         { No: 106, No_Catastral: "GP442W-35-0007", Ubicacion: "Res. Buenos Aires", Propietario: "N/A", Identidad: "0000", Responsable: "Oscar Baday Badai", Tipo_Salida: "Mal Archivada/Extraviada", Estacion: "N/A" }
-
         // Agrega más registros aquí
     ];
 
