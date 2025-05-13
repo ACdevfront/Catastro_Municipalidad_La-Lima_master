@@ -1,6 +1,6 @@
 let baseConocimiento = [];
 
-fetch("faq.json")
+fetch("../faq.json")
   .then(res => res.json())
   .then(data => baseConocimiento = data);
 
