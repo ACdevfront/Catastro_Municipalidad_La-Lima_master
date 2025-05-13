@@ -1,0 +1,36 @@
+
+[
+  {
+    "pregunta": [
+      "cambio de propietario",
+      "transferencia de terreno",
+      "traspaso de propiedad"
+    ],
+    "respuesta": "Estas son las instrucciones para hacer un Cambio de Propietario:\n1. Cotejo de Datos (No. Catastral, Colindancias, Área, etc.)\n2. Trasladar datos del dueño anterior a la sección Antecedentes Registrales\n3. Cambiar los datos del Propietario Anterior\n4. Si se modificó el Área del Terreno o se actualizó la valuación en la ficha, recalcular TODA la ficha\n5. Registrar TODA gestión en la ficha en la sección de Observaciones"
+  },
+
+  {
+    "pregunta": [
+      "¿Cómo se calcula el valor catastral?",
+      "¿Qué factores influyen en la valoración catastral?"
+    ],
+    "respuesta": "El valor catastral se calcula con base en: 1. Área del terreno, 2. Ubicación, 3. Uso del suelo, 4. Construcciones existentes, 5. Servicios públicos disponibles. El valor se actualiza con inspecciones y parámetros oficiales establecidos por la municipalidad."
+  },
+
+  {
+    "pregunta": [
+      "¿Cómo solicitar una certificación catastral?",
+      "¿Qué se necesita para obtener una certificación catastral?"
+    ],
+    "respuesta": "Para solicitar una certificación catastral: 1. Presentar solicitud escrita, 2. Adjuntar copia del plano y escritura, 3. Estar al día en pagos de impuestos, 4. Pagar la tasa correspondiente. El trámite puede tardar de 2 a 5 días hábiles."
+  },
+
+  {
+    "pregunta": [
+      "¿Qué hago si hay un error en el número catastral?",
+      "¿Cómo corregir errores en el catastro?"
+    ],
+    "respuesta": "Debes: 1. Presentar un escrito explicando el error, 2. Adjuntar documentos que respalden la corrección, 3. Esperar revisión técnica, 4. Confirmar el cambio en la base de datos. El tiempo depende de la complejidad del caso."
+  }  
+  
+]
