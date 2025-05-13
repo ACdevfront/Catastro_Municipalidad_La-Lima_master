@@ -2,11 +2,18 @@ let baseConocimiento = [];
 
 fetch("../faq.json")
   .then(res => res.json())
-  .then(data => baseConocimiento = data);
+  .then(data => {
+    baseConocimiento = data;
+
+    // Habilita el botón de enviar cuando ya se haya cargado el JSON
+    document.getElementById("enviar").addEventListener("click", enviarPregunta);
+  })
+  .catch(error => {
+    console.error("Error cargando JSON:", error);
+  });
 
 function enviarPregunta() {
   const entrada = document.getElementById("pregunta");
-  const chat = document.getElementById("chat");
   const texto = entrada.value.trim();
   if (!texto) return;
 
