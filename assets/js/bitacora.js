@@ -465,7 +465,151 @@ document.addEventListener("DOMContentLoaded", function () {
     { cod: "ENE25-06", fecha: "17/01/2025", noCatastral: "0501-6318-00014", ubicacion: "Brisas del Polvorin", nombreContribuyente: "FRANCISCO CHINCHILLA", noIdentidad: "N/A", tipoTrabajo: "Elaboración de Croquis", responsables: "Alejandro Castillo", resolucionTrabajo: "Se canceló el proceso porque se verificó que el predio está fuera del límite del municipio. SPS no lo tiene catastrado.", observaciones: "Apoyó: Modesto y Cristian." },
     { cod: "ENE25-07", fecha: "20/01/2025", noCatastral: "GP422A-20-0011", ubicacion: "Res. Villa Esther", nombreContribuyente: "N/A", noIdentidad: "N/A", tipoTrabajo: "Valuación Total", responsables: "Alejandro Castillo", resolucionTrabajo: "Finalizado", observaciones: "Apoyó: Juan y Maria." },
     { cod: "ENE25-08", fecha: "21/01/2025", noCatastral: "GP423H-02-0016", ubicacion: "Barrio Alpha", nombreContribuyente: "N/A", noIdentidad: "N/A", tipoTrabajo: "Elaboración de Croquis", responsables: "Alejandro Castillo", resolucionTrabajo: "No se efectuó el trabajo debido a inconsistencias en los planos originales y la disposición física de las edificaciones en los terrenos", observaciones: "Apoyó: Orlando y Maria." },
-    { cod: "ENE25-09", fecha: "23/01/2025", noCatastral: "GP423G-16-0015", ubicacion: "Col. Municipal", nombreContribuyente: "Maria Menjivar", noIdentidad: "N/A", tipoTrabajo: "Remedición de Terreno", responsables: "Alejandro Castillo", resolucionTrabajo: "Contribuyente solicitó remedición del terreno para corroborar los puntos físicos del terreno.", observaciones: "Apoyó: Orlando." }
+    { cod: "ENE25-09", fecha: "23/01/2025", noCatastral: "GP423G-16-0015", ubicacion: "Col. Municipal", nombreContribuyente: "Maria Menjivar", noIdentidad: "N/A", tipoTrabajo: "Remedición de Terreno", responsables: "Alejandro Castillo", resolucionTrabajo: "Contribuyente solicitó remedición del terreno para corroborar los puntos físicos del terreno.", observaciones: "Apoyó: Orlando." },
+    {
+      codigo: "ENE25-11",
+      fecha: "31/1/2025",
+      noCatastral: "GP442R-60-0007",
+      ubicacion: "Col. San Francisco",
+      nombreContribuyente: "VICENTE LARA",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Inspección de Campo",
+      responsables: "Alejandro Castillo",
+      resolucionTrabajo: "Contribuyente solicitó inspección de campo porque no existe casa desde antes del 2020",
+      observaciones: "Apoyó: Isaul."
+    },
+    {
+      codigo: "FEB25-01",
+      fecha: "7/2/2025",
+      noCatastral: "GP422E-54-0015",
+      ubicacion: "Las Mañanitas",
+      nombreContribuyente: "N/A",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Remedición de Terreno",
+      responsables: "Brandon Amaya",
+      resolucionTrabajo: "Finalizado",
+      observaciones: "Apoyó: Said, Juan y Alejandro"
+    },
+    {
+      codigo: "FEB25-02",
+      fecha: "13/2/2025",
+      noCatastral: "GP424V-32-0007",
+      ubicacion: "Centro Norte",
+      nombreContribuyente: "JUAN RODRIGUEZ",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Elaboración de Croquis",
+      responsables: "Alejandro Castillo",
+      resolucionTrabajo: "Finalizado",
+      observaciones: "Apoyó: Said, Juan e Isaul"
+    },
+    {
+      codigo: "FEB25-03",
+      fecha: "14/2/2025",
+      noCatastral: "GP431B-59-0018",
+      ubicacion: "Nueva Jerusalen",
+      nombreContribuyente: "N/A",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Inspección de Campo",
+      responsables: "Alejandro Castillo",
+      resolucionTrabajo: "Contribuyente solicitó inspección de campo porque la casa está deshabitada desde el año 2004",
+      observaciones: "Apoyó: María"
+    },
+    {
+      codigo: "FEB25-04",
+      fecha: "21/2/2025",
+      noCatastral: "GP431D-74-0001",
+      ubicacion: "Villas del Campo",
+      nombreContribuyente: "PATRONATO",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Remedición de Terreno",
+      responsables: "Alejandro Castillo",
+      resolucionTrabajo: "La forma del poligono del Lote en el plano original difiere de la forma que tiene en físico (P.A.T.H.)",
+      observaciones: "Apoyó: Gonzalo y Elvis"
+    },
+    {
+      codigo: "FEB25-05",
+      fecha: "26/2/2025",
+      noCatastral: "GP442V-49-0008",
+      ubicacion: "Nueva Jerusalen",
+      nombreContribuyente: "N/A",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Rest. del Terreno/Remanente",
+      responsables: "Alejandro Castillo",
+      resolucionTrabajo: "Se actualizó el Área de Terreno por venta de Fracc., quedando el Resto Registral de este terreno en 137.87 M²",
+      observaciones: "N/A"
+    },
+    {
+      codigo: "FEB25-06",
+      fecha: "26/2/2025",
+      noCatastral: "GP442V-49-0021",
+      ubicacion: "Nueva Jerusalen",
+      nombreContribuyente: "N/A",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Fraccionamiento",
+      responsables: "Alejandro Castillo",
+      resolucionTrabajo: "Se le asignó Clave nueva.",
+      observaciones: "N/A"
+    },
+    {
+      codigo: "MAR25-01",
+      fecha: "21/3/2025",
+      noCatastral: "GP423D-03-0008",
+      ubicacion: "Zona Americama",
+      nombreContribuyente: "N/A",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Fraccionamiento",
+      responsables: "Alejandro Castillo",
+      resolucionTrabajo: "Se corroboraron medidas de Fraccioamiento de acuerdo al plano levantado por Topógrafo privado y contribuyente solamente solicitó Constancia de Medidas y Colindancias, que le solicitó el abog.",
+      observaciones: "Apoyó: Brandon Amaya"
+    },
+    {
+      codigo: "MAR25-02",
+      fecha: "28/3/2025",
+      noCatastral: "GP424V-28-0021",
+      ubicacion: "Sitraterco",
+      nombreContribuyente: "N/A",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Valuación Total",
+      responsables: "Alejandro Castillo",
+      resolucionTrabajo: "Finalizado",
+      observaciones: "Apoyó: Gonzalo"
+    },
+    {
+      codigo: "MAR25-03",
+      fecha: "4/4/2025",
+      noCatastral: "GP424R-01-0007",
+      ubicacion: "Sitraterco",
+      nombreContribuyente: "N/A",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Inspección de Campo",
+      responsables: "Alejandro Castillo",
+      resolucionTrabajo: "No se pudo efectuar la inspección porque una de las partes alegó que no le avisaron para estar presente en la inspección",
+      observaciones: "Apoyó: Orlando"
+    },
+    {
+      codigo: "MAY25-01",
+      fecha: "14/5/2025",
+      noCatastral: "GP423A-07-0009",
+      ubicacion: "23 De Septiembre",
+      nombreContribuyente: "N/A",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Elaboración de Croquis",
+      responsables: "Alejandro Castillo",
+      resolucionTrabajo: "Finalizado en 19/05/2025",
+      observaciones: "Apoyó: Gonzalo"
+    },
+    {
+      codigo: "MAY25-02",
+      fecha: "15/5/2025",
+      noCatastral: "GP424R-01-0007",
+      ubicacion: "Sitraterco",
+      nombreContribuyente: "N/A",
+      noIdentidad: "N/A",
+      tipoTrabajo: "Inspección de Campo",
+      responsables: "Alejandro Castillo",
+      resolucionTrabajo: "Se dictaminó la existencia de invasiones aéreas recíprocas y el incumplimiento de los retiros reglamentarios en las propiedades en mención.",
+      observaciones: "Apoyó: Orlando"
+    }
     // Agrega más registros aquí
   ];
 
