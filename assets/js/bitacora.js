@@ -609,7 +609,44 @@ document.addEventListener("DOMContentLoaded", function () {
       responsables: "Alejandro Castillo",
       resolucionTrabajo: "Se dictaminó la existencia de invasiones aéreas recíprocas y el incumplimiento de los retiros reglamentarios en las propiedades en mención.",
       observaciones: "Apoyó: Orlando"
-    }
+    },
+    {
+    codigo: "AGO25-01",
+    fecha: "15/5/2025",
+    noCatastral: "GP423G-16-0100",
+    ubicacion: "Municipal",
+    nombreContribuyente: "SAYDA MIRANDA",
+    noIdentidad: "N/A",
+    tipoTrabajo: "Valuación Total",
+    responsables: "Alejandro Castillo",
+    resolucionTrabajo: "Finalizado",
+    observaciones: "Apoyó: María"
+  },
+  {
+    codigo: "AGO25-02",
+    fecha: "15/5/2025",
+    noCatastral: "GP423D-26-0001",
+    ubicacion: "Nuevo Renacer",
+    nombreContribuyente: "JULIO A. BUESO",
+    noIdentidad: "N/A",
+    tipoTrabajo: "Valuación Parcial",
+    responsables: "Alejandro Castillo",
+    resolucionTrabajo: "Finalizado",
+    observaciones: "Apoyó: Orlando"
+  },
+  {
+    codigo: "AGO25-03",
+    fecha: "18/8/2025",
+    noCatastral: "GP431D-74-0001",
+    ubicacion: "Villas del Campo",
+    nombreContribuyente: "PATRONATO",
+    noIdentidad: "N/A",
+    tipoTrabajo: "Elaboración de Croquis",
+    responsables: "Alejandro Castillo",
+    resolucionTrabajo: "Finalizado",
+    observaciones: "N/A"
+  }
+    
     // Agrega más registros aquí
   ];
 
