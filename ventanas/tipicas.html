@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo del Factor de Modificación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        #pt[readonly] {
+            background-color: #e9ecef;
+            color: #495057;
+            cursor: not-allowed;
+        }
+
+
+        button {
+            width: 100%;
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #219150;
+        }
+
+        .resultado {
+            margin-top: 20px;
+            padding: 15px;
+            background: #ecf0f1;
+            border-left: 5px solid #27ae60;
+            border-radius: 8px;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Calcular Factor de Modificación</h2>
+
+        <label for="colonia">Seleccione la Colonia:</label>
+        <select id="colonia" onchange="actualizarPT()">
+            <option value="">-- Seleccione una colonia --</option>
+            <option value="128.00">RES. BUENOS AIRES</option>
+            <option value="153.00">RES. VILLA SAN FERNANDO</option>
+            <option value="80.00">CIUDAD PLANETA</option>
+            <option value="350.00">INDEPENDENCIA</option>
+            <option value="300.00">COTRALMHYN</option>
+            <option value="100.00">DONALDO SIERRA</option>
+            <option value="250.00">22 DE MAYO</option>
+            <option value="140.00">NUEVA JERUSALEN</option>
+            <option value="126.00">GUAYMURAS</option>
+            <option value="300.00">SAN CRISTOBAL</option>
+            <option value="150.00">SANTA ISABEL APLICANO</option>
+            <option value="144.00">GRACIAS A DIOS</option>
+            <option value="500.00">QUINTA VENECIA</option>
+            <option value="500.00">AGUA PRIETA</option>
+            <option value="251.00">EL ROSARIO</option>
+            <option value="6972.24">JARDINES DE LA MESA</option>
+            <option value="200.00">LA VIRTUD</option>
+            <option value="150.00">SECTOR POLVORIN</option>
+            <option value="80.00">SECTOR PLANETA</option>
+            <option value="160.00">RES. VILLA NOVA</option>
+            <option value="150.00">COL. SAN FRANCISCO</option>
+            <option value="200.00">VILLAS VALENCIA</option>
+            <option value="200.00">VILLAS DEL CAMPO</option>
+            <option value="151.00">COL. LOS OLIVOS</option>
+            <option value="200.00">RODAS ALVARADO</option>
+            <option value="225.00">ALVAREZ MARTINEZ</option>
+            <option value="500.00">BELLA VISTA</option>
+            <option value="300.00">SITRATERCO</option>
+            <option value="400.00">4 DE JULIO</option>
+            <option value="150.00">BARRIO EL MIXTO</option>
+            <option value="350.00">EL MAESTRO</option>
+            <option value="150.00">FRATERNIDAD I</option>
+            <option value="167.00">FRATERNIDAD II</option>
+            <option value="80.00">RAFAEL CERRATO</option>
+            <option value="450.00">BARRIO LAS FLORES</option>
+            <option value="150.00">23 DE SEPTIEMBRE</option>
+            <option value="150.00">LOS ANGELES</option>
+            <option value="100.00">GUADALUPE</option>
+            <option value="200.00">CENTRO NORTE</option>
+            <option value="13.76">CENTRO NORTE (MERC. SAN JOSE)</option>
+            <option value="200.00">CAMPO COLOMBIA</option>
+            <option value="400.00">CENTRO SUR</option>
+            <option value="400.00">SULA</option>
+            <option value="400.00">BARRIO ALPHA</option>
+            <option value="400.00">EL CAIMAN</option>
+            <option value="300.00">CHULA VISTA</option>
+            <option value="300.00">LOS PINOS</option>
+            <option value="500.00">TELA</option>
+            <option value="350.00">EL ITALIANO</option>
+            <option value="400.00">EL CEMENTERIO</option>
+            <option value="280.00">MUNICIPAL</option>
+            <option value="250.00">MARTINEZ RIVERA</option>
+            <option value="360.00">GUARUMA I</option>
+            <option value="150.00">ROMA</option>
+            <option value="200.00">FILADELFIA</option>
+            <option value="300.00">BOCOK SELVA</option>
+            <option value="139.50">NUEVA GUADALUPE</option>
+            <option value="144.00">REFORMADA</option>
+            <option value="650.00">SITRAINA</option>
+            <option value="69.00">BRAMADERO</option>
+            <option value="360.00">BRIDEN</option>
+            <option value="226.00">VILLAS CATALINA</option>
+            <option value="450.00">RES. VILLA ESTHER</option>
+            <option value="216.00">RES. ORO VERDE</option>
+            <option value="225.00">RES. RIO TINTO/option>
+            <option value="275.00">RES. RIBERALTA</option>
+            <option value="2000.00">ZONA AMERICANA</option>
+            <option value="2000.00">ZONA HOSPITAL</option>
+            <option value="400.00">CHIQUITA - USULA</option>
+            <option value="300.00">LUIS THIEBAUD</option>
+            <option value="300.00">LA PAZ</option>
+            <option value="400.00">CAMPO PINEDA</option>
+            <option value="400.00">CAMPO DOS</option>
+            <option value="450.00">FLORES DE ORIENTE</option>
+            <option value="300.00">SUYAPA</option>
+            <option value="400.00">SAN JOSE</option>
+            <option value="220.00">NUEVO SAN JUAN</option>
+            <option value="90.00">EL BUEN SAMARITANO</option>
+            <option value="300.00">NUEVO RENACER</option>
+            <option value="460.00">CAMPO SAN JUAN</option>
+            <option value="2200.00">SECTOR SAN JUAN</option>
+            <option value="2500.00">LAS MAÑANITAS</option>
+            <option value="427.00">COPEN VIEJO</option>
+            <option value="500.00">COPEN NUEVO</option>
+            <option value="121.50">COL. CRUZ DE VALENCIA</option>
+            <option value="300.00">ALDEA 17 DE ENERO (LAS METALICAS)</option>
+            <option value="6972.24">ALDEA CRUZ DE VALENCIA</option>
+            <option value="650.00">ALDEA MONTE VIDEO</option>
+            <option value="1000.00">ALDEA LAS ROSAS</option>
+            <option value="10000.00">CAMPO INDIANA</option>
+            <option value="1.00">ALDEA EL PARAISO</option>
+            <option value="10000.00">FINCA ZAPOTE</option>
+            <option value="200.00">FINCA COLOMBIA</option>
+            <!-- Aquí se pueden agregar todas las demás colonias de la tabla -->
+        </select>
+
+        <label for="pt">Parcela Típica (P.T.) M²:</label>
+        <input type="number" id="pt" readonly placeholder="Se autocompleta según colonia">
+
+        <label for="area">Área del terreno (M²):</label>
+        <input type="number" id="area" placeholder="Ingrese área en m²">
+
+        <button onclick="calcularFM()">Calcular F.M.</button>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script>
+        function actualizarPT() {
+            let select = document.getElementById("colonia");
+            let ptInput = document.getElementById("pt");
+            ptInput.value = select.value;
+        }
+
+        function calcularFM() {
+            let pt = parseFloat(document.getElementById("pt").value);
+            let area = parseFloat(document.getElementById("area").value);
+            let resultadoDiv = document.getElementById("resultado");
+
+            if (isNaN(pt) || isNaN(area) || area <= 0) {
+                resultadoDiv.innerHTML = "⚠️ Ingrese valores válidos.";
+                resultadoDiv.style.color = "red";
+                return;
+            }
+
+            let fm = (pt / area) * 0.3 + 0.7;
+            resultadoDiv.innerHTML = "✅ El Factor de Modificación es: <br><span style='color:#27ae60; font-size:22px'>" + fm.toFixed(4) + "</span>";
+            resultadoDiv.style.color = "#2c3e50";
+        }
+    </script>
+</body>
+
+</html>
