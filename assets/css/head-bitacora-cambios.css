@@ -35,17 +35,17 @@
     display: inline-block;
     margin: 0.7rem; /*0.7rem*/
     position: relative; /* Necesario para los submenús */
-    padding-right: 1.2rem; /*1rem*/
+    padding-right: 1rem;
     padding-left: 1.5rem;
 }
 
 .head__enlace > a {
     text-decoration: none;
-    color: white;
+    color:orangered;
 }
 
 .head__enlace:hover > a {
-    color: #f8e004;
+    color:#f8e004;
     text-decoration: underline;
     /*font-size: 1.1rem;*/
     /*font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
@@ -104,7 +104,7 @@
     }
 
     .head__enlace:hover > a {
-        color: #04f839;
+        color:#f8e004;
     }
 }
 
