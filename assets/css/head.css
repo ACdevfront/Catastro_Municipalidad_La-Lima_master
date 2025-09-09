@@ -36,7 +36,7 @@
     margin: 0.7rem; /*0.7rem*/
     position: relative; /* Necesario para los submenús */
     padding-right: 0.5rem; /*1rem*/
-    padding-left: 1.5rem;
+    padding-left: 0.7rem; /*1.5rem*/
 }
 
 .head__enlace > a {
