@@ -1,0 +1,124 @@
+.head {
+    color: var(--background-blanco);
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+
+    border-bottom:none;
+
+    position: absolute;
+}
+
+/* Estilo general */
+.head__logo {
+    background: 15%;
+    margin-top: 0.15rem;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+}
+
+.head__navegacion {
+    text-align: center;
+    color: #f8e004;
+}
+
+.head__enlace {
+    font-size: 1.1rem;
+    display: inline-block;
+    margin: 0.7rem; /*0.7rem*/
+    position: relative; /* Necesario para los submenús */
+    padding-right: 1rem; /*1rem*/
+    padding-left: 1.5rem;
+}
+
+.head__enlace > a {
+    text-decoration: none;
+    color: white;
+}
+
+.head__enlace:hover > a {
+    color: #f8e004;
+    text-decoration: underline;
+    /*font-size: 1.1rem;*/
+    /*font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+}
+
+/* Estilo para el submenú */
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    opacity: 1; /*MODIFICADO*/
+    padding: 0.5rem;
+    list-style: none;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown__menu li {
+    margin: 0.3rem 0;
+}
+
+.dropdown__menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.dropdown__menu li a:hover {
+    background-color: #04f839;
+    color: #333;
+}
+
+/* Mostrar el submenú al pasar el cursor */
+.head__enlace:hover .dropdown__menu {
+    display: block;
+}
+
+/* Estilos responsivos */
+@media screen and (min-width: 960px) {
+    .head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /*border-bottom: 1px solid var(--border-cabecera-mobile);*/
+    }
+
+    .head__navegacion {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .head__enlace:hover > a {
+        color: #04f839;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .head {
+        border-bottom: 1px solid var(--border-cabecera-mobile);
+    }
+
+    .head__navegacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .head__enlace {
+        margin: 0.5rem 0;
+    }
+}
