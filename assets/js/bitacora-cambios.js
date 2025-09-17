@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const registros = [
   {
-    cod: "OCT23C-01",
+    cod: "OCT23-01",
     fecha: "17/10/2023",
     noCatastral: "GP421Y-35-0018",
     ubicacion: "Suyapa",
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.: Lester Eugenio Romero"
   },
   {
-    cod: "OCT23C-02",
+    cod: "OCT23-02",
     fecha: "30/10/2023",
     noCatastral: "GP424V-35-0009",
     ubicacion: "Centro Norte",
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.: Juan Ramón Rodriguez Pierrobon y coop."
   },
   {
-    cod: "SEP24C-01",
+    cod: "SEP24-01",
     fecha: "//2024",
     noCatastral: "GP134U-03-0013",
     ubicacion: "El Buen Samaritano",
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "SEP24C-02",
+    cod: "SEP24-02",
     fecha: "//2024",
     noCatastral: "GP442W-10-0003",
     ubicacion: "Res. Buenos Aires",
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "SEP24C-03",
+    cod: "SEP24-03",
     fecha: "9/10/2024",
     noCatastral: "GP424Y-27-0005",
     ubicacion: "La Paz",
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "OCT24C-01",
+    cod: "OCT24-01",
     fecha: "22/10/2024",
     noCatastral: "GP423B-02-0005",
     ubicacion: "Guadalupe",
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "OCT24C-02",
+    cod: "OCT24-02",
     fecha: "28/10/2024",
     noCatastral: "GP431D-71-0005",
     ubicacion: "El Rosario",
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "OCT24C-03",
+    cod: "OCT24-03",
     fecha: "28/10/2024",
     noCatastral: "GP421Y-06-0003",
     ubicacion: "Flores De Oriente",
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "NOV24C-01",
+    cod: "NOV24-01",
     fecha: "25/11/2024",
     noCatastral: "GP431C-18-0128",
     ubicacion: "San Cristobal",
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.: Amilcar Zabala"
   },
   {
-    cod: "DIC24C-01",
+    cod: "DIC24-01",
     fecha: "20/12/2024",
     noCatastral: "GP412Q-01-0046",
     ubicacion: "Nuevo San Juan",
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. Ant.: MIREYA TURCIOS"
   },
   {
-    cod: "DIC24C-02",
+    cod: "DIC24-02",
     fecha: "20/12/2024",
     noCatastral: "GP431C-31-0024",
     ubicacion: "Res. Buenos Aires",
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.: ALMA RAUDALES"
   },
   {
-    cod: "ENE25C-01",
+    cod: "ENE25-01",
     fecha: "9/1/2025",
     noCatastral: "GP442V-50-0009",
     ubicacion: "Nueva Jerusalen",
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.: Ministerio Monte de Santidad"
   },
   {
-    cod: "ENE25C-02",
+    cod: "ENE25-02",
     fecha: "27/1/2025",
     noCatastral: "GP423C-01-0006",
     ubicacion: "Centro Sur",
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "FEB25C-01",
+    cod: "FEB25-01",
     fecha: "25/2/2025",
     noCatastral: "GP423E-19-0009",
     ubicacion: "Campo Pineda",
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "FEB25C-02",
+    cod: "FEB25-02",
     fecha: "25/2/2025",
     noCatastral: "GP424V-30-0025",
     ubicacion: "Centro Norte",
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "MAR25C-01",
+    cod: "MAR25-01",
     fecha: "17/3/2025",
     noCatastral: "GP134Q-08-0010",
     ubicacion: "San Jose",
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "MAR25C-02",
+    cod: "MAR25-02",
     fecha: "18/3/2025",
     noCatastral: "GP424M-16-0005",
     ubicacion: "Alvarez Martinez",
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "MAR25C-03",
+    cod: "MAR25-03",
     fecha: "20/3/2025",
     noCatastral: "GP423G-16-0060",
     ubicacion: "Municipal",
@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "MAR25C-04",
+    cod: "MAR25-04",
     fecha: "26/3/2025",
     noCatastral: "GP421X-30-0007",
     ubicacion: "Suyapa",
@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "SEP25C-01",
+    cod: "SEP25-01",
     fecha: "19/8/2025",
     noCatastral: "GP423E-04-0004",
     ubicacion: "La Paz",
@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observaciones: "Prop. ant.:"
   },
   {
-    cod: "SEP25C-02",
+    cod: "SEP25-02",
     fecha: "19/8/2025",
     noCatastral: "GP442X-62-0003",
     ubicacion: "Ciudad Planeta",
@@ -268,8 +268,31 @@ document.addEventListener("DOMContentLoaded", function () {
     responsables: "Alejandro Castillo",
     resolucion: "ENTREGADO 08/09/2025 - 16:00",
     observaciones: "Prop. ant.:"
+  },
+  {
+    cod: "SEP25C-03",
+    fecha: "18/8/2025",
+    noCatastral: "GP424L-16-0004",
+    ubicacion: "Alvarez Martinez",
+    contribuyente: "ANTONIO NIETO",
+    identidad: "N/A",
+    tipoTrabajo: "Cambio de Propietario",
+    responsables: "Alejandro Castillo",
+    resolucion: "ENTREGADO 11/09/2025 - 16:30",
+    observaciones: "Prop. ant.:"
+  },
+  {
+    cod: "SEP25C-04",
+    fecha: "20/8/2025",
+    noCatastral: "GP442R-18-0005",
+    ubicacion: "Gracias A Dios",
+    contribuyente: "LETTY RAMOS",
+    identidad: "N/A",
+    tipoTrabajo: "Cambio de Propietario",
+    responsables: "Alejandro Castillo",
+    resolucion: "ENTREGADO 11/09/2025 - 16:30",
+    observaciones: "Prop. ant.:"
   }
-
     // Agrega más registros aquí
   ];
 
@@ -362,4 +385,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
