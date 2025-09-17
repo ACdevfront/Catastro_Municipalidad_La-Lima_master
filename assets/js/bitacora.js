@@ -738,7 +738,7 @@ document.addEventListener("DOMContentLoaded", function () {
     apoyo: "Orlando"
   },
   {
-    codigo: "SEP25-03B",
+    codigo: "SEP25-04",
     fecha: "12/9/2025",
     clave: "GP423G-16-0136",
     colonia: "Municipal",
@@ -750,7 +750,7 @@ document.addEventListener("DOMContentLoaded", function () {
     apoyo: "N/A"
   },
   {
-    codigo: "SEP25-04",
+    codigo: "SEP25-05",
     fecha: "12/9/2025",
     clave: "GP423G-37-0011",
     colonia: "Reformada",
@@ -853,3 +853,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
