@@ -423,7 +423,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Remedición de Terreno",
     tecnico: "Alejandro Castillo",
     observacion: "Finalizado",
-    apoyo: "Orlando"
+    apoyo: "Apoyó Orlando"
   },
   {
     codigo: "ENE25-05",
@@ -435,7 +435,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Remedición de Terreno",
     tecnico: "Alejandro Castillo",
     observacion: "El contribuyente solicitó remedición por sospecha que su vecina construyó un muro dentro de la propiedad de él. El personal de Catastro corroboró que no es así.",
-    apoyo: "Orlando y Cristian"
+    apoyo: "Apoyó Orlando y Cristian"
   },
   {
     codigo: "ENE25-06",
@@ -447,7 +447,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Inspección de Campo",
     tecnico: "Alejandro Castillo",
     observacion: "Se canceló el proceso porque se verificó que el predio está fuera del límite del municipio. SPS no lo tiene catastrado.",
-    apoyo: "Modesto y Cristian"
+    apoyo: "Apoyó Modesto y Cristian"
   },
   {
     codigo: "ENE25-07",
@@ -459,7 +459,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Valuación Total",
     tecnico: "Alejandro Castillo",
     observacion: "Finalizado",
-    apoyo: "Juan y Maria"
+    apoyo: "Apoyó Juan y Maria"
   },
   {
     codigo: "ENE25-08",
@@ -471,7 +471,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Elaboración de Croquis",
     tecnico: "Alejandro Castillo",
     observacion: "No se efectuó el trabajo debido a inconsistencias en los planos originales y la disposición física de las edificaciones en los terrenos.",
-    apoyo: "Orlando y Maria"
+    apoyo: "Apoyó Orlando y Maria"
   },
   {
     codigo: "ENE25-09",
@@ -483,7 +483,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Remedición de Terreno",
     tecnico: "Alejandro Castillo",
     observacion: "Contribuyente solicitó remedición del terreno para corroborar los puntos físicos del terreno.",
-    apoyo: "Orlando"
+    apoyo: "Apoyó Orlando"
   },
   {
     codigo: "ENE25-11",
@@ -495,7 +495,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Inspección de Campo",
     tecnico: "Alejandro Castillo",
     observacion: "Contribuyente solicitó inspección de campo porque no existe casa desde antes del 2020.",
-    apoyo: "Isaul"
+    apoyo: "Apoyó Isaul"
   },
   {
     codigo: "FEB25-01",
@@ -507,7 +507,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Remedición de Terreno",
     tecnico: "Brandon Amaya",
     observacion: "Finalizado",
-    apoyo: "(...), Juan y Alejandro"
+    apoyo: "Apoyó (...), Juan y Alejandro"
   },
   {
     codigo: "FEB25-02",
@@ -519,7 +519,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Elaboración de Croquis",
     tecnico: "Alejandro Castillo",
     observacion: "Finalizado",
-    apoyo: "(...), Juan e Isaul"
+    apoyo: "Apoyó (...), Juan e Isaul"
   },
   {
     codigo: "FEB25-03",
@@ -531,7 +531,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Inspección de Campo",
     tecnico: "Alejandro Castillo",
     observacion: "Contribuyente solicitó inspección de campo porque la casa está deshabitada desde el año 2004.",
-    apoyo: "María"
+    apoyo: "Apoyó María"
   },
   {
     codigo: "FEB25-04",
@@ -543,7 +543,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Remedición de Terreno",
     tecnico: "Alejandro Castillo",
     observacion: "La forma del polígono del Lote en el plano original difiere de la forma que tiene en físico (P.A.T.H.).",
-    apoyo: "Gonzalo y Elvis"
+    apoyo: "Apoyó Gonzalo y Elvis"
   },
   {
     codigo: "FEB25-05",
@@ -579,7 +579,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Fraccionamiento",
     tecnico: "Alejandro Castillo",
     observacion: "Se corroboraron medidas de Fraccionamiento de acuerdo al plano levantado por Topógrafo privado y contribuyente solamente solicitó Constancia de Medidas y Colindancias, que le solicitó el abogado.",
-    apoyo: "Brandon Amaya"
+    apoyo: "Apoyó Brandon Amaya"
   },
   {
     codigo: "MAR25-02",
@@ -591,7 +591,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Valuación Total",
     tecnico: "Alejandro Castillo",
     observacion: "Finalizado",
-    apoyo: "Gonzalo"
+    apoyo: "Apoyó Gonzalo"
   },
   {
     codigo: "MAR25-03",
@@ -603,7 +603,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Inspección de Campo",
     tecnico: "Alejandro Castillo",
     observacion: "No se pudo efectuar la inspección porque una de las partes alegó que no le avisaron para estar presente en la inspección.",
-    apoyo: "Orlando"
+    apoyo: "Apoyó Orlando"
   },
   {
     codigo: "MAY25-01",
@@ -615,7 +615,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Elaboración de Croquis",
     tecnico: "Alejandro Castillo",
     observacion: "Finalizado en 19/05/2025",
-    apoyo: "Gonzalo"
+    apoyo: "Apoyó Gonzalo"
   },
   {
     codigo: "MAY25-02",
@@ -627,7 +627,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Inspección de Campo",
     tecnico: "Alejandro Castillo",
     observacion: "Se dictaminó la existencia de invasiones aéreas recíprocas y el incumplimiento de los retiros reglamentarios en las propiedades en mención.",
-    apoyo: "Orlando"
+    apoyo: "Apoyó Orlando"
   },
   {
     codigo: "AGO25-01",
@@ -639,7 +639,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Valuación Total",
     tecnico: "Alejandro Castillo",
     observacion: "Finalizado",
-    apoyo: "María"
+    apoyo: "Apoyó María"
   },
   {
     codigo: "AGO25-02",
@@ -651,7 +651,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Valuación Parcial",
     tecnico: "Alejandro Castillo",
     observacion: "Finalizado",
-    apoyo: "Orlando"
+    apoyo: "Apoyó Orlando"
   },
   {
     codigo: "AGO25-03",
@@ -675,7 +675,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Valuación Parcial",
     tecnico: "Alejandro Castillo",
     observacion: "Se programó Valuación Parcial (ANEXO), pero se constató que el valuador y el calculista cometieron lapsus con la información, ya que el ANEXO ya estaba valuado.",
-    apoyo: "Elvis"
+    apoyo: "Apoyó Elvis"
   },
   {
     codigo: "AGO25-05",
@@ -687,7 +687,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Elaboración de Croquis",
     tecnico: "Alejandro Castillo",
     observacion: "Se remedió el predio con la intención de obtener el croquis para escriturar, pero se encontró que las medidas difieren totalmente al plano de Catastro Municipal. El único punto de referencia correcto es el vértice de enfrente contiguo al predio #93.",
-    apoyo: "Elvis"
+    apoyo: "Apoyó Elvis"
   },
   {
     codigo: "AGO25-06",
@@ -699,7 +699,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Remedición de Terreno",
     tecnico: "Alejandro Castillo",
     observacion: "Se remedió el predio en base a las medidas del PATH (Área calculada 346.96 M²), ya que tiene Resto Registral (333.25 M²) por venta de FRACCIÓN.",
-    apoyo: "Orlando"
+    apoyo: "Apoyó Orlando"
   },
   {
     codigo: "SEP25-01",
@@ -711,7 +711,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Reavalúo",
     tecnico: "Alejandro Castillo",
     observacion: "Finalizado",
-    apoyo: "Elvis y María"
+    apoyo: "Apoyó Elvis y María"
   },
   {
     codigo: "SEP25-02",
@@ -723,7 +723,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Reavalúo",
     tecnico: "Alejandro Castillo",
     observacion: "Finalizado",
-    apoyo: "Orlando"
+    apoyo: "Apoyó Orlando"
   },
   {
     codigo: "SEP25-03",
@@ -735,7 +735,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Remedición de Terreno",
     tecnico: "Alejandro Castillo",
     observacion: "Finalizado",
-    apoyo: "Orlando"
+    apoyo: "Apoyó Orlando"
   },
   {
     codigo: "SEP25-04",
@@ -759,7 +759,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Inspección de Campo",
     tecnico: "Alejandro Castillo",
     observacion: "De manera primigenia este predio se tenía que fraccionar de la clave GP423G-37-0006; el PATH se lo adjudicó a la sra. Lizeth Montoya (SIN DOMINIO PLENO) y esta misma se lo vendió a la sra. María Montalvo, se lo vendió como la clave GP423G-37-0007, pero se tenía que fraccionar con nueva clave.",
-    apoyo: "Orlando"
+    apoyo: "Apoyó Orlando"
   }
     // Agrega más registros aquí
   ];
@@ -853,4 +853,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 
