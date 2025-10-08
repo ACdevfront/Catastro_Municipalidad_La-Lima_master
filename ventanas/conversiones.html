@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversor de Longitud y Superficie</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+  }
+
+  h1, h2 {
+    text-align: center;
+    color: #2f3640;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 380px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background: #f0f0f0;
+  }
+
+  th {
+    background: #2f3640;
+    color: white;
+  }
+</style>
+</head>
+<body>
+  <h1>Conversor de Longitud y Superficie (Áreas)</h1>
+
+  <div class="container">
+    <!-- Conversor de Longitud -->
+    <div class="card">
+      <h2>Longitud</h2>
+      <label for="valorLongitud">Ingresa un valor:</label>
+      <input type="number" id="valorLongitud" placeholder="Longitud a convertir" step="any">
+
+      <label for="unidadLongitud">Selecciona la unidad:</label>
+      <select id="unidadLongitud">
+        <option value="metro">Metro</option>
+        <option value="vara">Vara</option>
+        <option value="pie">Pie</option>
+        <option value="pulgada">Pulgada</option>
+        <option value="legua">Legua</option>
+        <option value="yarda">Yarda</option>
+      </select>
+
+      <table>
+        <thead>
+          <tr><th>Unidad</th><th>Resultado</th></tr>
+        </thead>
+        <tbody id="resultadosLongitud"></tbody>
+      </table>
+    </div>
+
+    <!-- Conversor de Superficies -->
+    <div class="card">
+      <h2>Superficie (Áreas)</h2>
+      <label for="valorSuperficie">Ingresa un valor:</label>
+      <input type="number" id="valorSuperficie" placeholder="Superficie (Área) a convertir" step="any">
+
+      <label for="unidadSuperficie">Selecciona la unidad:</label>
+      <select id="unidadSuperficie">
+        <option value="hectarea">Hectárea</option>
+        <option value="manzana">Manzana</option>
+        <option value="tarea">Tarea</option>
+        <option value="metro2">Metro Cuadrado</option>
+        <option value="vara2">Vara Cuadrada</option>
+        <option value="pie2">Pie Cuadrado</option>
+        <option value="pulgada2">Pulgada Cuadrada</option>
+      </select>
+
+      <table>
+        <thead>
+          <tr><th>Unidad</th><th>Resultado</th></tr>
+        </thead>
+        <tbody id="resultadosSuperficie"></tbody>
+      </table>
+    </div>
+  </div>
+
+<script>
+  // Conversor de Longitud
+  const factoresLongitud = {
+    metro: 1,
+    vara: 1 / 1.19760479, // 1 vara = 0.835 m => 1 m = 1.196 varas
+    pie: 3.28084,
+    pulgada: 39.3701,
+    legua: 1 / 5572.7,
+    yarda: 1.09361
+  };
+
+  const nombresLongitud = {
+    metro: "Metros",
+    vara: "Varas",
+    pie: "Pies",
+    pulgada: "Pulgadas",
+    legua: "Leguas",
+    yarda: "Yardas"
+  };
+
+  function convertirLongitud() {
+    const valor = parseFloat(document.getElementById("valorLongitud").value);
+    const unidad = document.getElementById("unidadLongitud").value;
+    const cuerpo = document.getElementById("resultadosLongitud");
+    cuerpo.innerHTML = "";
+    if (isNaN(valor)) return;
+
+    const metros = valor / factoresLongitud[unidad];
+
+    for (const [u, factor] of Object.entries(factoresLongitud)) {
+      const resultado = metros * factor;
+      cuerpo.innerHTML += `<tr><td><b>${nombresLongitud[u]}</b></td><td>${resultado.toFixed(6)}</td></tr>`;
+    }
+  }
+
+  document.getElementById("valorLongitud").addEventListener("input", convertirLongitud);
+  document.getElementById("unidadLongitud").addEventListener("change", convertirLongitud);
+
+  // Conversor de Superficies
+  const factoresSuperficie = {
+    hectarea: 10000,
+    manzana: 6972.24,
+    tarea: 435.765,
+    metro2: 1,
+    vara2: 1 / 1.43426,
+    pie2: 1 / 10.7639,
+    pulgada2: 1 / 1550
+  };
+
+  const nombresSuperficie = {
+    hectarea: "Hectáreas",
+    manzana: "Manzanas",
+    tarea: "Tareas",
+    metro2: "Metros Cuadrados",
+    vara2: "Varas Cuadradas",
+    pie2: "Pies Cuadrados",
+    pulgada2: "Pulgadas Cuadradas"
+  };
+
+  function convertirSuperficie() {
+    const valor = parseFloat(document.getElementById("valorSuperficie").value);
+    const unidad = document.getElementById("unidadSuperficie").value;
+    const cuerpo = document.getElementById("resultadosSuperficie");
+    cuerpo.innerHTML = "";
+    if (isNaN(valor)) return;
+
+    const metros2 = valor * factoresSuperficie[unidad];
+
+    for (const [u, factor] of Object.entries(factoresSuperficie)) {
+      const resultado = metros2 / factor;
+      cuerpo.innerHTML += `<tr><td><b>${nombresSuperficie[u]}</b></td><td>${resultado.toFixed(6)}</td></tr>`;
+    }
+  }
+
+  document.getElementById("valorSuperficie").addEventListener("input", convertirSuperficie);
+  document.getElementById("unidadSuperficie").addEventListener("change", convertirSuperficie);
+</script>
+</body>
+</html>
