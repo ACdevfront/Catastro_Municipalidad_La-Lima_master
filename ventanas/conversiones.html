@@ -110,6 +110,7 @@
         <option value="vara2">Vara Cuadrada</option>
         <option value="pie2">Pie Cuadrado</option>
         <option value="pulgada2">Pulgada Cuadrada</option>
+        <option value="acre">Acre</option>
       </select>
 
       <table>
@@ -167,7 +168,8 @@
     metro2: 1,
     vara2: 1 / 1.43426,
     pie2: 1 / 10.7639,
-    pulgada2: 1 / 1550
+    pulgada2: 1 / 1550,
+    acre: 4046.86
   };
 
   const nombresSuperficie = {
@@ -177,7 +179,8 @@
     metro2: "Metros Cuadrados",
     vara2: "Varas Cuadradas",
     pie2: "Pies Cuadrados",
-    pulgada2: "Pulgadas Cuadradas"
+    pulgada2: "Pulgadas Cuadradas",
+    acre: "Acre"
   };
 
   function convertirSuperficie() {
@@ -199,5 +202,4 @@
   document.getElementById("unidadSuperficie").addEventListener("change", convertirSuperficie);
 </script>
 </body>
-
 </html>
