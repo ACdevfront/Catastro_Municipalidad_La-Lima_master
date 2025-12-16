@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tipoTrabajo: "Inspección de Campo",
     responsable: "Alejandro Castillo",
     resolucion: "En el frente tiene menos 20 cm, atrás el ancho del muro está a favor del vecino de atrás",
-    observaciones: "Apoyó: (...), Brandon, (...) y Cristian"
+    observaciones: "Apoyó: Said, Brandon, (...) y Cristian"
   },
   {
     codigo: "JUL24-01",
@@ -507,7 +507,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Remedición de Terreno",
     tecnico: "Brandon Amaya",
     observacion: "Finalizado",
-    apoyo: "(...), Juan y Alejandro"
+    apoyo: "Said, Juan y Alejandro"
   },
   {
     codigo: "FEB25-02",
@@ -519,7 +519,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tramite: "Elaboración de Croquis",
     tecnico: "Alejandro Castillo",
     observacion: "Finalizado",
-    apoyo: "(...), Juan e Isaul"
+    apoyo: "Said, Juan e Isaul"
   },
   {
     codigo: "FEB25-03",
@@ -988,6 +988,78 @@ document.addEventListener("DOMContentLoaded", function () {
     responsable: "Alejandro Castillo",
     resolucion: "Se persuadió al propietario para retirar una cerca instalada en la entrada del pasaje",
     observaciones: "Apoyó: Orlando"
+  },
+  {
+    codigo: "DIC25-01",
+    fecha: "3/12/2025",
+    clave: "GP431B-32-0001",
+    ubicacion: "Nueva Jerusalen",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Rest. del Terreno / Remanente",
+    responsable: "Alejandro Castillo",
+    resolucion: "Se redujo el área del terreno conforme a resto registral consultado en SURE, respecto a dos donaciones de fracciones",
+    observaciones: "Apoyó: Orlando"
+  },
+  {
+    codigo: "DIC25-02",
+    fecha: "3/12/2025",
+    clave: "GP442W-44-0004",
+    ubicacion: "Nueva Jerusalen",
+    contribuyente: "SERVIO MADRID",
+    identidad: "N/A",
+    tipoTrabajo: "Asistencia Técnica al Juez",
+    responsable: "Alejandro Castillo",
+    resolucion: "Se solicitó asistencia técnica para corroborar el estatus legal del predio; se determinó una aparente ambigüedad en los antecedentes",
+    observaciones: "Apoyó: Orlando"
+  },
+  {
+    codigo: "DIC25-03",
+    fecha: "3/12/2025",
+    clave: "GP442W-44-0005",
+    ubicacion: "Nueva Jerusalen",
+    contribuyente: "SERVIO MADRID",
+    identidad: "N/A",
+    tipoTrabajo: "Asistencia Técnica al Juez",
+    responsable: "Alejandro Castillo",
+    resolucion: "Se solicitó asistencia técnica para corroborar el estatus legal del predio; se determinó una aparente ambigüedad en los antecedentes",
+    observaciones: "Apoyó: Orlando"
+  },
+  {
+    codigo: "DIC25-04",
+    fecha: "3/12/2025",
+    clave: "GP442W-45-0010",
+    ubicacion: "Nueva Jerusalen",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Asistencia Técnica al Juez",
+    responsable: "Alejandro Castillo",
+    resolucion: "Se solicitó asistencia técnica para corroborar el estatus legal del predio; se determinó una aparente ambigüedad en los antecedentes",
+    observaciones: "Apoyó: Orlando"
+  },
+  {
+    codigo: "DIC25-05",
+    fecha: "4/12/2025",
+    clave: "GP442X-14-0023",
+    ubicacion: "Ciudad Planeta",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Inspección de Campo",
+    responsable: "Alejandro Castillo",
+    resolucion: "Se verificó que la Escritura Pública tiene errado el número de lotificadora (779), debiendo ser 780",
+    observaciones: "Apoyó: Orlando"
+  },
+  {
+    codigo: "DIC25-06",
+    fecha: "12/12/2025",
+    clave: "GP431C-13-0022",
+    ubicacion: "Guaymuras",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Remedición de Terreno",
+    responsable: "Alejandro Castillo",
+    resolucion: "Las medidas de las estaciones 1 y 2 delineadas por el PATH no concordaron con lo físico (13.84 m y 10.35 m respectivamente)",
+    observaciones: "Apoyó: María"
   }
     // Agrega más registros aquí
   ];
