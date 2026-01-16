@@ -1060,6 +1060,78 @@ document.addEventListener("DOMContentLoaded", function () {
     responsable: "Alejandro Castillo",
     resolucion: "Las medidas de las estaciones 1 y 2 delineadas por el PATH no concordaron con lo físico (13.84 m y 10.35 m respectivamente)",
     observaciones: "Apoyó: María"
+  },
+   {
+    codigo: "DIC25-07",
+    fecha: "20/12/2025",
+    clave: "GP423G-16-0028",
+    ubicacion: "Municipal",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Remedición de Terreno",
+    responsable: "Alejandro Castillo",
+    resolucion: "Debido a inconsistencias en las delineaciones de referencia, no se pudo efectuar el trabajo y se reprogramará para los primeros días de enero de 2026",
+    observaciones: "Apoyó: Brandon y Orlando"
+  },
+  {
+    codigo: "DIC25-08",
+    fecha: "23/12/2025",
+    clave: "GP423L-44-0013",
+    ubicacion: "Municipal",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Remedición de Terreno",
+    responsable: "Alejandro Castillo",
+    resolucion: "BURDEL",
+    observaciones: "Apoyó: Orlando y Elvis"
+  },
+  {
+    codigo: "DIC25-09",
+    fecha: "23/12/2025",
+    clave: "GP422G-16-0015",
+    ubicacion: "Res. Oro Verde",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Elaboración de Croquis",
+    responsable: "Alejandro Castillo",
+    resolucion: "ENTREGADO 07/01/2026 - 16:30",
+    observaciones: "Apoyó: Orlando"
+  },
+  {
+    codigo: "ENE26-01",
+    fecha: "7/1/2026",
+    clave: "GP423L-44-0013",
+    ubicacion: "Municipal",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Remedición de Terreno",
+    responsable: "Alejandro Castillo",
+    resolucion: "Según antecedentes del Documento Privado de Compra Venta, el lote fue levantado con medidas 16.10 m x 30.31 m y área mal calculada; se rectificó a 15.00 m x 29.85 m",
+    observaciones: "Apoyó: Modesto y Orlando"
+  },
+  {
+    codigo: "ENE26-02",
+    fecha: "7/1/2026",
+    clave: "GP423L-44-0014",
+    ubicacion: "Municipal",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Remedición de Terreno",
+    responsable: "Alejandro Castillo",
+    resolucion: "Según antecedentes del Documento Privado de Compra Venta, el lote tenía el área mal calculada; se rectificó a 15.00 m x 29.85 m",
+    observaciones: "Apoyó: Modesto y Orlando"
+  },
+  {
+    codigo: "ENE26-03",
+    fecha: "9/1/2026",
+    clave: "GP423L-44-0013",
+    ubicacion: "Municipal",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Elaboración de Croquis",
+    responsable: "Alejandro Castillo",
+    resolucion: "ENTREGADO 15/01/2026 - 12:00",
+    observaciones: "Apoyó: Modesto y Orlando"
   }
     // Agrega más registros aquí
   ];

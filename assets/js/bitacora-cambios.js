@@ -292,6 +292,126 @@ document.addEventListener("DOMContentLoaded", function () {
     responsables: "Alejandro Castillo",
     resolucion: "ENTREGADO 11/09/2025 - 16:30",
     observaciones: "Prop. ant.:"
+  },
+  {
+    cod: "SEP25C-03",
+    fecha: "18/8/2025",
+    noCatastral: "GP424L-16-0004",
+    ubicacion: "Alvarez Martinez",
+    contribuyente: "ANTONIO NIETO",
+    identidad: "N/A",
+    tipoTrabajo: "Cambio de Propietario",
+    responsables: "Alejandro Castillo",
+    resolucion: "ENTREGADO 11/09/2025 - 16:30",
+    observaciones: "Prop. ant.:"
+  },
+  {
+    cod: "SEP25C-04",
+    fecha: "20/8/2025",
+    noCatastral: "GP442R-18-0005",
+    ubicacion: "Gracias A Dios",
+    contribuyente: "LETTY RAMOS",
+    identidad: "N/A",
+    tipoTrabajo: "Cambio de Propietario",
+    responsables: "Alejandro Castillo",
+    resolucion: "ENTREGADO 11/09/2025 - 16:30",
+    observaciones: "Prop. ant.:"
+  },
+  {
+    cod: "OCT25C-01",
+    fecha: "6/10/2025",
+    noCatastral: "GP424W-42-0006",
+    ubicacion: "4 De Julio",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Cambio de Propietario",
+    responsables: "Alejandro Castillo",
+    resolucion: "ENTREGADO 09/10/2025 - 10:30",
+    observaciones: "Prop. ant.:"
+  },
+  {
+    cod: "OCT25C-02",
+    fecha: "6/10/2025",
+    noCatastral: "GP422G-01-0021",
+    ubicacion: "Res. Oro Verde",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Cambio de Propietario",
+    responsables: "Alejandro Castillo",
+    resolucion: "ENTREGADO 09/10/2025 - 10:30",
+    observaciones: "Prop. ant.:"
+  },
+  {
+    cod: "OCT25C-03",
+    fecha: "6/10/2025",
+    noCatastral: "GP431D-17-0023",
+    ubicacion: "Villas del Campo",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Cambio de Propietario",
+    responsables: "Alejandro Castillo",
+    resolucion: "ENTREGADO 09/10/2025 - 10:30",
+    observaciones: "Prop. ant.:"
+  },
+  {
+    cod: "OCT25C-04",
+    fecha: "21/10/2025",
+    noCatastral: "GP423G-09-0020",
+    ubicacion: "Chulavista",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Fraccionamiento",
+    responsables: "Alejandro Castillo",
+    resolucion: "CLAVE NUEVA",
+    observaciones: "N/A"
+  },
+  {
+    cod: "OCT25C-05",
+    fecha: "21/10/2025",
+    noCatastral: "GP423G-09-0013",
+    ubicacion: "Chulavista",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Rest. del Terreno/Remanente",
+    responsables: "Alejandro Castillo",
+    resolucion: "RESTO REGISTRAL",
+    observaciones: "N/A"
+  },
+  {
+    cod: "OCT25C-06",
+    fecha: "22/10/2025",
+    noCatastral: "GP134Q-07-0022",
+    ubicacion: "San Jose",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Cambio de Propietario",
+    responsables: "Alejandro Castillo",
+    resolucion: "ENTREGADO 27/11/2025 - 10:30",
+    observaciones: "Prop. ant.:"
+  },
+  {
+    cod: "OCT25C-07",
+    fecha: "28/10/2025",
+    noCatastral: "GP431D-37-0022",
+    ubicacion: "Donaldo Sierra",
+    contribuyente: "N/A",
+    identidad: "N/A",
+    tipoTrabajo: "Cambio de Propietario",
+    responsables: "Alejandro Castillo",
+    resolucion: "ENTREGADO 28/11/2025 - 10:30",
+    observaciones: "Prop. ant.:"
+  },
+  {
+    cod: "DIC25C-01",
+    fecha: "4/12/2025",
+    noCatastral: "GP442X-14-0023",
+    ubicacion: "Ciudad Planeta",
+    contribuyente: "PETRONA RODRIGUEZ",
+    identidad: "N/A",
+    tipoTrabajo: "Cambio de Propietario",
+    responsables: "Alejandro Castillo",
+    resolucion: "ENTREGADO 10/12/2025 - 11:30",
+    observaciones: "Prop. ant.:"
   }
     // Agrega más registros aquí
   ];
